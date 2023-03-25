@@ -1,0 +1,420 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Rayfield Ariel Hentai Window",
+   LoadingTitle = "Ariel Hentai Private",
+   LoadingSubtitle = "By Ariel#6064",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "sirius", -- The Discord invite code, do not include discord.gg/
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Ariel Private",
+      Subtitle = "Key System",
+      Note = "Join the discord (discord.gg/sirius)",
+      FileName = "Saber Key",
+      SaveKey = true,
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = "SaberKey"
+   }
+})
+
+local Tab = Window:CreateTab("Main", 4483362458)
+
+
+Rayfield:Notify({
+   Title = "Notification!",
+   Content = "Thanks For Using The Private Hub!",
+   Duration = 6.5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+
+local Section = Tab:CreateSection("HELLO KITTY  ITEMS")
+
+
+local Toggle = Tab:CreateToggle({
+   Name = "Crabby",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(state)
+if state then _G.on = true while _G.on do wait() local args = { [1] = "Crabby" } 
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end
+   end,
+})
+
+local Toggle = Tab:CreateToggle({
+   Name = "Vibe Boombox",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(state)
+   if state then _G.on = true while _G.on do wait() local args = { [1] = "Vibe Boombox" } 
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end
+   end,
+})
+
+local Toggle = Tab:CreateToggle({
+   Name = "Hellow Catty",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(state)
+   if state then _G.on = true while _G.on do wait() local args = { [1] = "Hellow Catty" } 
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end
+   end,
+})
+
+local Toggle = Tab:CreateToggle({
+   Name = "Hello Scary",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(state)
+   if state then _G.on = true while _G.on do wait() local args = { [1] = "Hello Scary" } 
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end
+   end,
+})
+
+local Toggle = Tab:CreateToggle({
+   Name = "Hello Snow",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(state)
+if state then _G.on = true while _G.on do wait() local args = { [1] = "Hello Snow" } 
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end
+   end,
+})
+
+local Section = Tab:CreateSection("FUNNY ITEMS")
+
+local Toggle = Tab:CreateToggle({
+   Name = "Auto Buy Window",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(state)
+   if state then _G.on = true while _G.on do wait() local args = { [1] = "Window" } 
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end
+   end,
+})
+
+local Toggle = Tab:CreateToggle({
+   Name = "Auto Buy Pengwin",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(state)
+if state then _G.on = true while _G.on do wait() local args = { [1] = "Pengwin" } 
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end
+   end,
+})
+
+local Toggle = Tab:CreateToggle({
+   Name = "Auto Buy El Computadora",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(state)
+if state then _G.on = true while _G.on do wait() local args = { [1] = "El Computadora" } 
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end
+   end,
+})
+
+local Toggle = Tab:CreateToggle({
+   Name = "Auto Buy Cookies And Cake",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(state)
+if state then _G.on = true while _G.on do wait() local args = { [1] = "Cookies and Cake" } 
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end
+   end,
+})
+
+local Section = Tab:CreateSection("WEDNESDAY ITEMS")
+
+local Toggle = Tab:CreateToggle({
+   Name = "Auto Buy Hand Rainbow",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(state)
+if state then _G.on = true while _G.on do wait() local args = { [1] = "Hand Rainbow" } 
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end
+   end,
+})
+
+local Section = Tab:CreateSection("BOX TOY ITEMS")
+
+local Toggle = Tab:CreateToggle({
+   Name = "Auto Buy Box Toy Harambe",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(state)
+   if state then _G.on = true while _G.on do wait() local args = { [1] = "Box Toy Harambe" } 
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end
+   end,
+})
+
+local Toggle = Tab:CreateToggle({
+   Name = "Auto Buy Box Toy Lem",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(state)
+if state then _G.on = true while _G.on do wait() local args = { [1] = "Box Toy Lem" } 
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end
+   end,
+})
+
+local Section = Tab:CreateSection("LETTER ITEMS")
+
+local Toggle = Tab:CreateToggle({
+   Name = "Auto Buy Letter F",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(state)
+if state then _G.on = true while _G.on do wait() local args = { [1] = "F" } 
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end
+   end,
+})
+
+local Section = Tab:CreateSection("OFFSALES ITEMS")
+
+local Toggle = Tab:CreateToggle({
+   Name = "Auto Buy Demogorgan Kawaii",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(state)
+if state then _G.on = true while _G.on do wait() local args = { [1] = "Demogorgan Kawaii" } 
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end
+   end,
+})
+
+local Toggle = Tab:CreateToggle({
+   Name = "Auto Buy Dart",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(state)
+if state then _G.on = true while _G.on do wait() local args = { [1] = "Dart" } 
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end
+   end,
+})
+
+local Toggle = Tab:CreateToggle({
+   Name = "Auto Buy Demogorgan",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(state)
+if state then _G.on = true while _G.on do wait() local args = { [1] = "Demogorgan" } 
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end
+   end,
+})
+
+local Section = Tab:CreateSection("VALENTINE ITEMS")
+
+local Toggle = Tab:CreateToggle({
+   Name = "Auto Buy Heart Lightstick",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(state)
+if state then _G.on = true while _G.on do wait() local args = { [1] = "Heart Lightstick" } 
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end else _G.on = false end
+   end,
+})
+
+
+
+local Tab1 = Window:CreateTab("Expensive Item", 4483362458)
+
+local Section1 = Tab1:CreateSection("1# The Banana")
+
+local Button = Tab1:CreateButton({
+   Name = "The Banana ( $999,999,999,999 )",
+   Callback = function()
+local args = {
+    [1] = "The Banana"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+
+local Section1 = Tab1:CreateSection("2# Angel Eye")
+
+local Button = Tab1:CreateButton({
+   Name = "Angel Eye ( $999,999,999 )",
+   Callback = function()
+local args = {
+    [1] = "Angel Eye"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+
+local Section1 = Tab1:CreateSection("3# Pop It Rainbow!")
+
+local Button = Tab1:CreateButton({
+   Name = "Pop It Rainbow! ( $600,000,000 )",
+   Callback = function()
+   local args = {
+    [1] = "Pop It Rainbow!"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+
+local Section1 = Tab1:CreateSection("4# Lolly Rainbow")
+
+local Button = Tab1:CreateButton({
+   Name = "Lolly Rainbow ( $300,000,000 )",
+   Callback = function()
+   local args = {
+    [1] = "Lolly Rainbow"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+
+local Section1 = Tab1:CreateSection("5# Amogus Rainbow")
+
+local Button = Tab1:CreateButton({
+   Name = "Amogus Rainbow ( $200,000,000 )",
+   Callback = function()
+   local args = {
+    [1] = "Amogus Rainbow"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+
+local Button = Tab1:CreateButton({
+   Name = "Crystal Rainbow",
+   Callback = function()
+   local args = {
+    [1] = "Crystal Rainbow"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+
+local Button = Tab1:CreateButton({
+   Name = "Slippy Rainbow",
+   Callback = function()
+   local args = {
+    [1] = "Slippy Rainbow"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+
+local Button = Tab1:CreateButton({
+   Name = "Rainbow Banana",
+   Callback = function()
+local args = {
+    [1] = "Rainbow Banana"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+
+local Button = Tab1:CreateButton({
+   Name = "Gummy Rainbow",
+   Callback = function()
+   local args = {
+    [1] = "Gummy Rainbow"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+
+local Button = Tab1:CreateButton({
+   Name = "Gem Rainbow",
+   Callback = function()
+local args = {
+    [1] = "Gem Rainbow"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+
+local Tab2 = Window:CreateTab("Scripts", 4483362458)
+
+local Button = Tab2:CreateButton({
+   Name = "Fe Animation",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "X-ray Value",
+   Callback = function()
+   game.Players.localPlayer.XRay.Value = true
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Mesh Items",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/A88jaKEV"))()
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Fly",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/3syZbSSp"))();
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Fake Drop Gui",
+   Callback = function()
+   loadstring(game:HttpGet(('https://gist.githubusercontent.com/domdaobfuscater/fe930f03b884af58e3cdf5c9a078bfc2/raw/0f4b866d5054ed96604cec95091bca607525d4f5/gistfile1.txt')))()
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Arceus X Executor",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Infinite Yield",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
+
+local Tab3 = Window:CreateTab("Credits", 4483362458)
+
+local Paragraph = Tab3:CreateParagraph({Title = "First Credits", Content = "SaberTeach#6064"})
+
+local Paragraph = Tab3:CreateParagraph({Title = "Second Credits", Content = "Join Discord To Get More Items Have Giveaway!"})
+
+local Button = Tab3:CreateButton({
+   Name = "Discord Link Invite",
+   Callback = function()
+   setclipboard("https://discord.gg/6dBVVm5nfs")
+   end,
+})
+
+
