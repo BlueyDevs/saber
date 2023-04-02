@@ -719,6 +719,11 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+game.StarterGui:SetCore("SendNotification", {
+Title = "Notification",
+Text = "My Title Here",
+Duration = 5,
+})
    end,
 })
 
@@ -753,9 +758,10 @@ local Button = Tab2:CreateButton({
 })
 
 local Button = Tab2:CreateButton({
-   Name = "Fake Drop Gui",
+   Name = "Fake Drop & Dupe",
    Callback = function()
-   loadstring(game:HttpGet(('https://gist.githubusercontent.com/domdaobfuscater/fe930f03b884af58e3cdf5c9a078bfc2/raw/0f4b866d5054ed96604cec95091bca607525d4f5/gistfile1.txt')))()
+   _G.credits = "Credits to iShield. DISCORD SERVER INVITE LINK: https://discord.gg/x57Xk65xZs"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iShield2005/scripts/master/shieldhubloader"))()
    end,
 })
 
